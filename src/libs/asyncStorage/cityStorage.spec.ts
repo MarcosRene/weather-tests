@@ -1,9 +1,9 @@
-import { getStorageCity } from "@libs/asyncStorage/cityStorage"
+import { getStorageCity } from '@libs/asyncStorage/cityStorage';
 
-
-describe("Storage: cityStorage", () => {
+describe('Storage: cityStorage', () => {
   it("should be return null when don't have a city storaged", async () => {
-    const response = await getStorageCity()
-    console.log(response)
-  })
-})
+    const response = await getStorageCity();
+
+    expect(response).toBeNull();
+  });
+});
